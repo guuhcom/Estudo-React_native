@@ -1,13 +1,27 @@
 import React from 'react';
-import { Text } from 'react-native';
-import { retrieveSourceMap } from 'source-map-support';
+import { View } from 'react-native';
+
+
+import CompPadrao, {Comp1,Comp2 } from './components/Multi'
+import Primerio from './components/Primeiro';
+
+export default function (){
+    return (
+        <View>
+            <CompPadrao />
+            <Comp1 />
+            <Comp2 />
+            <Primerio/>
+        </View>
+    )   
+};
 
 /* // Função Explícita 
 function App(){  
     return  <Text>Tatu</Text>
 }
 
-export default App
+export default Apps
 */
 
 /* //Função anonima - function expretion
@@ -28,4 +42,3 @@ export default () => {
     return <Text>Tatu</Text>
 }*/
 
-export default () => <Text>Tatu</Text>
