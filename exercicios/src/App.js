@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 
 import CompPadrao, {Comp1,Comp2 } from './components/Multi'
@@ -7,7 +7,7 @@ import Primerio from './components/Primeiro';
 
 export default function (){
     return (
-        <View>
+        <View style ={style.Container}>
             <CompPadrao />
             <Comp1 />
             <Comp2 />
@@ -15,6 +15,17 @@ export default function (){
         </View>
     )   
 };
+
+const style = StyleSheet.create({
+    Container: {
+        backgroundColor: '#A00',
+        flexGrow: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+});
+
+
 
 /* // Função Explícita 
 function App(){  
