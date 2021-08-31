@@ -4,12 +4,15 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
     fontG:{
-        fontSize: 32
+        fontSize: 32,
+        textAlign: 'center'
     },
     fontM:{
-        fontSize: 27
+        fontSize: 27,
+        textAlign: 'center'
     },
     fontP:{
-        fontSize: 20
+        fontSize: 20,
+        textAlign: 'center'
     }
 });

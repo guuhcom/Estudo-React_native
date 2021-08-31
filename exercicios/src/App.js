@@ -1,27 +1,41 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { Text,View, StyleSheet } from 'react-native';
 
 
-import CompPadrao, {Comp1,Comp2 } from './components/Multi'
-import Primerio from './components/Primeiro';
+import Contador from './components/Contador';
+import Estilo from './components/estilo';
+//import Botao from './components/Botao';
+//import Titulo from './components/Titulo';
+//import NumRandon from './components/NumRandon';
+//import MinMax from './components/MinMax'
+//import CompPadrao, {Comp1,Comp2 } from './components/Multi'
+//import Primerio from './components/Primeiro';
 
 export default function (){
     return (
         <View style ={style.Container}>
+            <Text style={Estilo.fontP}>Concator:</Text>
+            <Contador inicial = {20}/>
+            {/*
+            <Titulo titulo = 'Cadastro Produto' segundario = 'Tela de cadastro de produto' />
+            <Botao />
+            <NumRandon max = {50} min = {1} />
+            <MinMax min ={3} max={30}/>
             <CompPadrao />
             <Comp1 />
             <Comp2 />
-            <Primerio/>
+            <Primerio/>*/}
         </View>
     )   
 };
 
 const style = StyleSheet.create({
     Container: {
-        backgroundColor: '#A00',
+        //backgroundColor: '#A00',
         flexGrow: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: 20
     }
 });
 
